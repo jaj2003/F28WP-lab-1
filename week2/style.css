@@ -123,6 +123,10 @@ main h3 {
     max-width: 250px;
 
 }
+.service img2{
+    float:right
+
+}
 
 .service-column h3 {
     margin-bottom: 5px;
@@ -169,6 +173,7 @@ main h3 {
     padding: 10px 20px;
     background-color: #af521c;
     color: #ffffff;
+    border: 2px solid #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -179,6 +184,8 @@ main h3 {
 
 .cta-button:hover {
     background-color: #772d02;
+    color: #fff;
+    border-color: #fff;
 }
 
 /* Footer Styles */
