@@ -5,8 +5,8 @@ var myCity = {
 };
 console.log(myCity.name); // Outputs: Dubai
 console.log(myCity.country); // Outputs: UAE
-var myCity = ["Dubai", "UAE", "Dubai Mall"];
-console.log(myCity[1]); // Outputs: Dubai
+var myCityArray = ["Dubai", "UAE", "Dubai Mall"];
+console.log(myCityArray[1]); // Outputs: Dubai
 
 var myCities = [
     {
@@ -25,8 +25,9 @@ console.log(myCities[1].country); // Outputs: Italy
 var cityContainer = document.getElementById("city-info");
 var btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
+    
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://jaj2003.github.io/week4/cities1.json');
+    ourRequest.open('GET', 'https://jaj2003.github.io/F28WP-lab-1/week4/cities1.json');
     ourRequest.onload = function () {
         var ourData = JSON.parse(ourRequest.responseText);
         renderHTML(ourData);
@@ -36,7 +37,7 @@ btn.addEventListener("click", function () {
 });
 function renderHTML(data) {
     var htmlString = "";
-    for (i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; i++) {
         htmlString += "<p>" + data[i].name + " is a city in " + data[i].country + ",</br> Where you can enjoy indoor places like: ";
         for (ii = 0; ii < data[i].places.indoor.length; ii++) {
             // Loop through the indoor places of the current city.
