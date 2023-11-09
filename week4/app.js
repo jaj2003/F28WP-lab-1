@@ -20,8 +20,9 @@ btn.addEventListener('click', () => {
       .then((response) => {
       if (!response.ok) {
         //Error handling
-        throw new Error(HTTP Error! Status: ${ response.status });
+        throw new Error(`HTTP Error! Status: ${response.status}`);
       }
+      
       return response.json();
     })
         .then((data) => {
