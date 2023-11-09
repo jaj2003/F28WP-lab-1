@@ -1,5 +1,5 @@
 //API key 
-const apiKey = 'bd16cb6ea96f383516b8014161f74e38';
+const apiKey = '6e26f9f1fa1346f7e61fdd6c2fb353ba';
 
 //Variables to store references to your input field, button, and weather info div.
 const cityInput = document.getElementById('cityInput');
