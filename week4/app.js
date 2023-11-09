@@ -1,5 +1,5 @@
 //API key 
-var apiKey = 'YOUR API KEY';
+var apiKey = '74d32a4af245a1f08ea3244527462852';
 
 //Variables to store references to your input field, button, and weather info div.
 var cityInput = document.getElementById('cityInput');
@@ -16,7 +16,7 @@ btn.addEventListener('click', function()  {
     alert('Please enter a city name.');
     return;
   }
-  
+
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + apiKey);
 
