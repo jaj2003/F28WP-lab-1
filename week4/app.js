@@ -16,7 +16,7 @@ btn.addEventListener('click', () => {
     alert('Please enter a city name.');
   } else {
     //HTTP request to the OpenWeatherMap API to fetch the weather data.
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='${city}&appid=${apiKey})
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
       .then((response) => {
       if (!response.ok) {
         //Error handling
