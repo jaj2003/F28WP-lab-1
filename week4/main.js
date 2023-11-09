@@ -26,7 +26,7 @@ var cityContainer = document.getElementById("city-info");
 var btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://your name.github.io/week4/cities1.json');
+    ourRequest.open('GET', 'https://jaj2003.github.io/F28WP-lab-1/cities1.json');
     ourRequest.onload = function () {
         var ourData = JSON.parse(ourRequest.responseText);
         renderHTML(ourData);
